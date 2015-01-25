@@ -1,0 +1,30 @@
+{
+	"title": "Museum Schema",
+	"type": "object",
+	"properties": {
+		"identifier": {
+			"type": "string"
+		},
+		"url": {
+            "format" : "uri",
+			"type": "string"
+		},
+		"dateCreation": {
+			"description": "date of creation",
+            "format" : "date-time",
+			"type": "string"
+			
+		},
+        "description": {
+            "type" : "string"
+        },
+        "title": {
+            "type" : "string"
+        },
+        "creator": {
+            "type" : "string"
+        }
+        
+	},
+	"required": ["identifier", "url"]
+}
